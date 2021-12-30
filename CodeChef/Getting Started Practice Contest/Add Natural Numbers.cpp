@@ -74,9 +74,9 @@ ll phin(ll n) {ll number = n; if (n % 2 == 0) {number /= 2; while (n % 2 == 0) n
 
 
 void solve() {
-  int n;
+  long long n;
   cin >> n;
-  int sum = 0;
+  long long sum = 0;
   for (int i = 0; i <= n; i++)
     sum = sum + i;
 
