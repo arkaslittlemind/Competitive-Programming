@@ -1,4 +1,4 @@
-Question Link- https://www.codechef.com/CCSTART2/problems/ISBOTH
+Question Link - https: //www.codechef.com/CCSTART2/problems/ISBOTH
 
 #include<bits/stdc++.h>
 // #include<ext/pb_ds/assoc_container.hpp>
@@ -77,13 +77,10 @@ void solve() {
   int n;
   cin >> n;
 
-  if ((n % 5) == 0 || (n % 11) == 0) {
-    if ((n % 11) == 0 && (n % 11) == 0)
-      cout << "BOTH" << endl;
-    else
-      cout << "ONE" << endl;
-  }
-
+  if (n % 5 == 0 && n % 11 == 0)
+    cout << "BOTH" << endl;
+  else if (n % 5 == 0 || n % 11 == 0)
+    cout << "ONE" << endl;
 
   else
     cout << "NONE" << endl;
