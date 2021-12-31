@@ -1,5 +1,3 @@
-Question Link- https://www.codechef.com/CCSTART2/problems/EXTRICHK
-
 #include<bits/stdc++.h>
 // #include<ext/pb_ds/assoc_container.hpp>
 // #include<ext/pb_ds/tree_policy.hpp>
@@ -79,14 +77,17 @@ void solve() {
   int a, b, c;
   cin >> a >> b >> c;
 
-  if (a == b && b == c && c == a)
-    cout << 1 << endl;
-  else if (a == b && b == c && c != a)
-    cout << 2 << endl;
-  else if (a != b && b != c && c != a)
-    cout << 3 << endl;
+  if (a + b > c && b + c > a && c + a > b)
+  {
+    if (a == b && b == c)
+      cout << "1";
+    else if (a == b || b == c || c == a)
+      cout << "2";
+    else
+      cout << "3";
+  }
   else
-    cout << -1 << endl;
+    cout << "-1";
 
 }
 // solve
