@@ -4,6 +4,8 @@ Question Link- https://codeforces.com/problemset/problem/112/A
 
 /* Arkadipta Mojumder */
 
+/* Arkadipta Mojumder */
+
 #include<bits/stdc++.h>
 // #include<ext/pb_ds/assoc_container.hpp>
 // #include<ext/pb_ds/tree_policy.hpp>
@@ -82,18 +84,24 @@ ll phin(ll n) {ll number = n; if (n % 2 == 0) {number /= 2; while (n % 2 == 0) n
 void solve() {
 	string s1, s2;
 	cin >> s1 >> s2;
-	int counter = 0;
+
 
 	for (int i = 0; i < s1.length(); i++) {
-		if (tolower(s1[i]) > tolower(s2[i]))
-			cout << 1 << endl;
-		else if (tolower(s1[i]) < tolower(s2[i]))
-			cout << -1 << endl;
-		else
-			counter++;
+		if (s1[i] < 92)
+			s1[i] += 32;
+		if (s2[i] < 92)
+			s2[i] += 32;
 	}
-	if (counter == s1.length())
-		cout << 0 << endl;
+	if (s1 < s2) {
+		cout << -1;
+	}
+	else if (s1 > s2) {
+		cout << 1;
+	}
+	else if (s1 == s2) {
+		cout << 0;
+	}
+
 
 } // solve
 
@@ -119,4 +127,6 @@ int main() {
 	cerr << "Time: " << duration . count() / 1000 << endl;
 #endif
 } // main
+
+
 
