@@ -75,7 +75,7 @@ ll phin(ll n) {ll number = n; if (n % 2 == 0) {number /= 2; while (n % 2 == 0) n
 
 
 
-void solve() {
+void arkaslittlemind() {
 
 } // solve
 
@@ -94,7 +94,7 @@ int main() {
   int t = 1;
   cin >> t;
   while(t--) {
-  solve();
+  arkaslittlemind();
 } // testcases
   auto stop1 = high_resolution_clock::now();
   auto duration = duration_cast<microseconds>(stop1 - start1);
