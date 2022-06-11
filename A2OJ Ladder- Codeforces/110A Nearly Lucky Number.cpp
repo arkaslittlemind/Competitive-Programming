@@ -1,4 +1,4 @@
-Question Link- https://codeforces.com/problemset/problem/110/A
+Question Link- https://codeforces.com/problemset/problem/110/A0
 
 /* Arkadipta Mojumder */
 
